@@ -24,8 +24,24 @@ ul {
     list-style: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+    margin: 0;
+}
+
 .section {
     padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.section-whatwedo {
     padding-bottom: 94px;
 }
 
@@ -50,6 +66,9 @@ ul {
 .site-nav {
     display: flex;
     margin-left: 93px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
 
 }
 .site-nav .item {
@@ -60,8 +79,8 @@ ul {
     margin-right: 0;
 }
 .site-nav .link {
-    padding-top: 21px;
-    padding-bottom: 21px;
+    padding-top: 32px;
+    padding-bottom: 32px;
     display:block;
 
     color: var(--primary-text-color);
@@ -72,10 +91,6 @@ ul {
     text-decoration: none;
     font-size: 14px;
     line-height: 1.14;
-}
-
-.header {
-    padding-top: 24px;   
 }
 
 .main-nav {
@@ -235,11 +250,16 @@ button > .btn-primary {
     max-width: 270px;
 }
 
+
 .benefits-list {
     display: flex;
     margin-top: 0;
     margin-bottom: 0;
-    
+    padding: 0;
+}
+
+.benfits-block:not(:first-child) {
+    margin-left: 30px;
 }
 
 p {
@@ -271,18 +291,14 @@ p {
 /* our team  */
 
 
-.section-title.team {
-    padding-bottom: 50px;
-}
-.team-list {
-    margin-right: 30px;
-    padding-left: 0;
-    margin-bottom: 0;
-}
-
 .team-list {
     display: flex;
     margin-right: -30px;
+    margin-top: 0;
+    
+    margin-right: 30px;
+    padding-left: 0;
+    margin-bottom: 0;
 }
 
 .team-list .item {
@@ -297,7 +313,7 @@ p {
 }
 
 .team-name {
-    margin-top: 30px;
+    padding-top: 30px;
     margin-bottom: 10px;
 
     font-size: 16px;
@@ -307,7 +323,7 @@ p {
 }
 
 .team-position {
-    margin-bottom: 30px;
+    padding-bottom: 30px;
 
     font-size: 16px;
     font-weight: normal;
@@ -319,16 +335,14 @@ p {
 /* footer  */
 
 
-.logo-container {
+.footer {
     padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2F303A;
 }
 
 .logo-part-footer {
     color:var(--primary-white-color);
-}
-
-footer {
-    background-color: #2F303A;
 }
 
 address {
@@ -359,14 +373,16 @@ address .button-footer-primary, .button-footer-secondary {
 
 .footer-list {
     padding-left: 0px;
-    padding-bottom: 20px;
 }
 
 .address-data {
     margin-top: 20px;
     margin-bottom: 9px;
 }
-    
+
+.button-footer-primary {
+    margin-bottom: 9px;
+}
 /* PORTFOLIO  */
 
 /* header  */
@@ -381,8 +397,8 @@ address .button-footer-primary, .button-footer-secondary {
 .filter-list {
     display: flex;
     margin-top: 0;
-    margin-bottom: 34px;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 .filter-list .item.item:not(:first-child) {
@@ -391,11 +407,11 @@ address .button-footer-primary, .button-footer-secondary {
 
 
 .project-title {
-    margin: 0;
+    margin-bottom: 4px;
+
 }
 
 .project-profile {
-    margin-top: 4;
     margin-bottom: 0;
 }
 
@@ -452,6 +468,7 @@ button {
     background-color: var(--primary-white-color);
     color: var(--primary-text-color);
     box-shadow: 0px 0px 0px;
+    padding: 6px 22px;
 }
 
 .filter-list button:hover, 
